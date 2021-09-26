@@ -8,7 +8,7 @@ let cantidadAdultos = Number (prompt ('Por favor ingrese la cantidad de adultos 
 let cantidadNiños = Number (prompt ('Por favor ingrese la cantidad de niños que desean hospedarse'))
 let cantidadDias = Number (prompt ('¿Cuántas noches desean alojarse en nuestras cabañas?'))
 
-// Operaciones matemáticas y concanetación de los datos recibidos
+// Operaciones matemáticas y concatenación de los datos recibidos
 let saludo = nombre + ' ¡Te damos la bienvenida a nuestras Cabañas en Estancia Las Cañitas!'
 let disponibilidad = '¡Buenas noticias! Tenemos disponible la Cabaña ' + cabaña + ' para recibir a ' + (cantidadAdultos + cantidadNiños) + ' personas durante ' + cantidadDias + ' noches.'
 

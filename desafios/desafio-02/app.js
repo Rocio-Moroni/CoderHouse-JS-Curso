@@ -4,8 +4,6 @@ Crea un algoritmo que solicite al usuario uno o más valores ingresados por prom
 // Ingreso de datos por parte del usuario
 let pago = prompt ('¿Desea pagar con tarjeta de crédito o transferencia bancaria?')
 
-
-
 // Comparadores compuestos
 if ((pago === "credito") || (pago === "transferencia")) {
     alert ('Usted va a pagar con ' + pago);
