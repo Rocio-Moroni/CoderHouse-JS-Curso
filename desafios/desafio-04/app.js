@@ -22,59 +22,23 @@ function precioPorNoche (i) {
     montoEstadia = cantidadNoches * i;
 }
 
-// Designación de cabaña en base a la cantidad de personas hospedadas. Monto total de la estadía.
+// Designación de cabaña en base a la cantidad de personas hospedadas y monto total de la estadía.
 if (suma <= 4) {
     alert (`¡Buenas noticias! Tenemos disponible la Cabaña "La Cascada" para recibir a ${suma} personas`);
-    precioPorNoche (laCascada);
+    precioPorNoche(laCascada)
     alert (`El monto total de su estadía por ${cantidadNoches} noches es de $ ${montoEstadia}`);
-} 
-else if (4 < suma <= 8) {
+} else if (suma > 4 && suma <= 8) {
     alert (`¡Buenas noticias! Tenemos disponible la Cabaña "Los Aromos" para recibir a ${suma} personas`);
-    precioPorNoche (losAromos);
+    precioPorNoche(losAromos)
     alert (`El monto total de su estadía por ${cantidadNoches} noches es de $ ${montoEstadia}`);
-}
-else if (8 < suma <= 12) {
+} else if ( suma > 8 && suma <= 12) {
     alert (`¡Buenas noticias! Tenemos disponible la Cabaña "Los Espinillos" para recibir a ${suma} personas`);
-    precioPorNoche (losEspinillos);
+    precioPorNoche(losEspinillos)
     alert (`El monto total de su estadía por ${cantidadNoches} noches es de $ ${montoEstadia}`);
-}
-else {
+} else {
     alert (`Lo sentimos, no disponemos de cabañas para alojar a más de 12 personas`);
 }
 
 
 
 // 
-
-
-
-
-
-// let preguntaTipoPagina = parseInt(Number(prompt("Si queres una landing page ingresa 1, sino ingresa 2.")));
-// let preguntaViewportsLanding = parseInt(Number(prompt("Cuantos viewports queres que tenga tu Landing page")));
-
-// let tipoDePagina = preguntaTipoPagina => {
-// if (preguntaTipoPagina == 1) {
-//     paginaLandingPage(preguntaViewportsLanding);
-// } else if (preguntaTipoPagina == 2) {
-//     paginaNotLandingPage();
-// } else {
-//     alert ("El dato ingresado no es valido");
-// }};
-
-// let paginaLandingPage = (preguntaViewportsLanding) => {
-// let resultado;
-// if (preguntaViewportsLanding <= 3) {
-//     resultado = "La pagina vale $10,000";
-// } else if (3 < preguntaViewportsLanding <= 5) {
-//     resultado = "La pagina vale $20,000";
-// } else {resultado = "El precio no puede ser estimado facilmente, envianos un mensaje en Contacto con tu idea!"}
-// console.log(resultado);
-// };
-
-// let paginaNotLandingPage = (preguntaViewportsLanding) => {
-// let mensaje = "No trabajamos este tipo de paginas web";
-// console.log(mensaje);
-// }
-
-// console.log(tipoDePagina(preguntaTipoPagina));
