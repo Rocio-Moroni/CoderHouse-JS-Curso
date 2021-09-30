@@ -36,7 +36,7 @@ if (suma <= 4) {
 } else if ( suma > 8 && suma <= 12) {
     alert (`¡Buenas noticias! Tenemos disponible la Cabaña "Los Espinillos" para recibir a ${suma} personas`);
     precioPorNoche(losEspinillos)
-    alert (`El monto total de su estadía por ${cantidadNoches} noches es de $${montoEstadia}`);
+    alert (`El monto total de su estadía por ${cantidadNoches} noches es de ${$montoEstadia}`);
 } else {
     alert (`Lo sentimos, no disponemos de cabañas para alojar a más de 12 personas`);
 }
@@ -54,10 +54,10 @@ switch (cuotas) {
         alert('Realizará el pago total en una sola cuota sin interés');
         break;
     case 2:
-        alert(`Realizará el pago total en dos cuotas sin interés, cada cuota será de $${montoEstadia / 2}`);
+        alert(`Realizará el pago total en dos cuotas sin interés, cada cuota será de $${Math.round (montoEstadia / 2)}`);
         break;
     case 3:
-        alert(`Realizará el pago total en tres cuotas sin interés, cada cuota será de $${montoEstadia / 3}`);
+        alert(`Realizará el pago total en tres cuotas sin interés, cada cuota será de $${Math.round (montoEstadia / 3)}`);
         break;
     default:
         alert('El número ingresado no es válido');
