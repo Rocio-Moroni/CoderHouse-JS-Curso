@@ -65,3 +65,27 @@ iniciarReserva () ;{
     }
 }
 
+// Forma de pago y cálculo de monto final.
+if ((pago === "credito") || (pago === "transferencia")) {
+    alert ('Usted va a pagar con ' + pago);
+} else {
+    alert ('Por favor ingrese si pagará con tarjeta de crédito o transferencia');
+} 
+if (pago === "credito") {
+    let cuotas = parseInt(prompt('¿Desea pagar con 1, 2 o 3 cuotas?'));
+switch (cuotas) {
+    case 1:
+        alert('Realizará el pago total en una sola cuota sin interés');
+        break;
+    case 2:
+        alert(`Realizará el pago total en dos cuotas sin interés, cada cuota será de $${Math.round (montoEstadia / 2)}`);
+        break;
+    case 3:
+        alert(`Realizará el pago total en tres cuotas sin interés, cada cuota será de $${Math.round (montoEstadia / 3)}`);
+        break;
+    default:
+        alert('El número ingresado no es válido');
+        break;
+}} else if (pago === 'transferencia') {
+    alert(`Usted recibirá un 10% de descuento, su monto final a pagar es de $${montoEstadia - (montoEstadia * 0.1)}`);
+} 
