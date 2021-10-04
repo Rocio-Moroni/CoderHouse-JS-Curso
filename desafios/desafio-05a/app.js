@@ -53,25 +53,25 @@ const pago = new Monto ({
 iniciarReserva () ;{
     if (reserva.totalAlojados <= 4) {
         alert (`¡Buenas noticias! Tenemos disponible la Cabaña "La Cascada" para recibir a ${reserva.totalAlojados} personas`);
-        alert (`El monto total de su estadía por ${cantidadNoches} noches es de $${this.cantidadNoches * laCascada}`);
+        alert (`El monto total de su estadía por ${pago.cantidadNoches} noches es de $${pago.cantidadNoches * pago.laCascada}`);
     } else if (reserva.totalAlojados > 4 && suma <= 8) {
         alert (`¡Buenas noticias! Tenemos disponible la Cabaña "Los Aromos" para recibir a ${reserva.totalAlojados} personas`);
-        alert (`El monto total de su estadía por ${cantidadNoches} noches es de $${this.cantidadNoches * losAromos}`);
+        alert (`El monto total de su estadía por ${pago.cantidadNoches} noches es de $${pago.cantidadNoches * pago.losAromos}`);
     } else if ( reserva.totalAlojados > 8 && suma <= 12) {
         alert (`¡Buenas noticias! Tenemos disponible la Cabaña "Los Espinillos" para recibir a ${reserva.totalAlojados} personas`);
-        alert (`El monto total de su estadía por ${cantidadNoches} noches es de ${this.cantidadNoches * losEspinillos}`);
+        alert (`El monto total de su estadía por ${pago.cantidadNoches} noches es de ${pago.cantidadNoches * pago.losEspinillos}`);
     } else {
         alert (`Lo sentimos, no disponemos de cabañas para alojar a más de 12 personas`);
     }
 }
 
 // Forma de pago y cálculo de monto final.
-if ((pago === "credito") || (pago === "transferencia")) {
-    alert ('Usted va a pagar con ' + pago);
+if ((pago.pago === "credito") || (pago.pago === "transferencia")) {
+    alert ('Usted va a pagar con ' + pago.pago);
 } else {
     alert ('Por favor ingrese si pagará con tarjeta de crédito o transferencia');
 } 
-if (pago === "credito") {
+if (pago.pago === "credito") {
     let cuotas = parseInt(prompt('¿Desea pagar con 1, 2 o 3 cuotas?'));
 switch (cuotas) {
     case 1:
