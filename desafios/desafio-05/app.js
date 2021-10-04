@@ -38,8 +38,8 @@ const pago = new Monto ();
 this.cantidadNoches = parseInt (Number (prompt ('¿Cuántas noches desean alojarse?'))); 
 this.pago = prompt ('¿Desea pagar con tarjeta de crédito o transferencia bancaria?');
 this.laCascada = 2000,
-losAromos = 4000,
-losEspinillos = 6000,
+this.losAromos = 4000,
+this.losEspinillos = 6000,
 
 
 // FUNCIÓN
