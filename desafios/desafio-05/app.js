@@ -37,25 +37,35 @@ suma = cantidadAdultos + cantidadNiños;
 const pago = new Monto ();
 this.cantidadNoches = parseInt (Number (prompt ('¿Cuántas noches desean alojarse?'))); 
 this.pago = prompt ('¿Desea pagar con tarjeta de crédito o transferencia bancaria?');
+this.laCascada = 2000,
+losAromos = 4000,
+losEspinillos = 6000,
+
 
 // FUNCIÓN
-const generarReserva = () => {
 
+function precioPorNoche (i) {
+    montoEstadia = cantidadNoches * i;
 }
+
+
+
+// const generarReserva = () => {
+// }
 
 // Designación de cabaña en base a la cantidad de personas hospedadas y monto total a pagar de la estadía.
 if (suma <= 4) {
     alert (`¡Buenas noticias! Tenemos disponible la Cabaña "La Cascada" para recibir a ${suma} personas`);
     precioPorNoche(laCascada)
-    alert (`El monto total de su estadía por ${cantidadNoches} noches es de $${montoEstadia}`);
+    alert (`El monto total de su estadía por ${this.cantidadNoches} noches es de $${montoEstadia}`);
 } else if (suma > 4 && suma <= 8) {
     alert (`¡Buenas noticias! Tenemos disponible la Cabaña "Los Aromos" para recibir a ${suma} personas`);
     precioPorNoche(losAromos)
-    alert (`El monto total de su estadía por ${cantidadNoches} noches es de $${montoEstadia}`);
+    alert (`El monto total de su estadía por ${this.cantidadNoches} noches es de $${montoEstadia}`);
 } else if ( suma > 8 && suma <= 12) {
     alert (`¡Buenas noticias! Tenemos disponible la Cabaña "Los Espinillos" para recibir a ${suma} personas`);
     precioPorNoche(losEspinillos)
-    alert (`El monto total de su estadía por ${cantidadNoches} noches es de ${$montoEstadia}`);
+    alert (`El monto total de su estadía por ${this.cantidadNoches} noches es de ${$montoEstadia}`);
 } else {
     alert (`Lo sentimos, no disponemos de cabañas para alojar a más de 12 personas`);
 }
