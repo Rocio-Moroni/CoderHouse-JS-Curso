@@ -17,7 +17,7 @@ class Reservas {
 /* Funciones*/
 
 //Reserva1
-const reserva1 = new Reservas ("Rocio", 2, 2, 4, 2000, 4000, 6000,);
+const reserva1 = new Reservas ("Rocio", 2, 2, 4, 2000, 4000, 6000);
 const saludarReserva1 = () => {
 console.log (`¡Hola ${reserva1.nombre}! Te damos la bienvenida a nuestras Cabañas en Estancia Las Cañitas`)
 }
@@ -37,7 +37,7 @@ const iniciarReserva1 = () => {
 
 
     //Reserva2
-    const reserva2 = new Reservas ("Julia", 6, 2, 6, 2000, 4000, 6000,);
+    const reserva2 = new Reservas ("Julia", 6, 2, 6, 2000, 4000, 6000);
     const saludarReserva2 = () => {
         console.log (`¡Hola ${reserva2.nombre}! Te damos la bienvenida a nuestras Cabañas en Estancia Las Cañitas`)
         }
@@ -56,7 +56,7 @@ const iniciarReserva1 = () => {
     }}
 
     //Reserva3
-    const reserva3 = new Reservas ("Federico", 6, 4, 2, 2000, 4000, 6000,);
+    const reserva3 = new Reservas ("Federico", 6, 4, 2, 2000, 4000, 6000);
     const saludarReserva3 = () => {
         console.log (`¡Hola ${reserva3.nombre}! Te damos la bienvenida a nuestras Cabañas en Estancia Las Cañitas`)
         }
@@ -75,7 +75,7 @@ const iniciarReserva1 = () => {
     }}
 
     //Reserva4
-    const reserva4 = new Reservas ("Leonardo", 8, 6, 8, 2000, 4000, 6000,);
+    const reserva4 = new Reservas ("Leonardo", 8, 6, 8, 2000, 4000, 6000);
     const saludarReserva4 = () => {
         console.log (`¡Hola ${reserva4.nombre}! Te damos la bienvenida a nuestras Cabañas en Estancia Las Cañitas`)
         }
