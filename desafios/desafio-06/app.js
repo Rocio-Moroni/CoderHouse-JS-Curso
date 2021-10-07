@@ -1,36 +1,32 @@
-/* El objetivo de mi proyecto es poder realizar una página web de alquiler de cabañas, en donde el usuario vaya ingresando los datos solicitados para así poder realizar una reserva. */
+/* Se le incorpora a la página un sistema de servicio de comida para desayunos, almuerzos, meriendas y cenas */
 
 /* Entidades*/
-// Entidad "Reservas"
-class Reservas {
-    constructor (nombre, cantidadAdultos, cantidadNiños, cantidadNoches, laCascada, losAromos, losEspinillos, formaDePago, mail) {
-        this.nombre = nombre;
-        this.cantidadAdultos = cantidadAdultos;
-        this.cantidadNiños = cantidadNiños;
-        this.cantidadNoches = cantidadNoches;
-        this.laCascada = laCascada;
-        this.losAromos = losAromos;
-        this.losEspinillos = losEspinillos;
-        this.totalAlojados = cantidadAdultos + cantidadNiños;
-        this.formaDePago = formaDePago;
-        this.mail = mail;
+// Entidad "Servicio"
+class Producto {
+    constructor (colacion, precio) {
+        this.colacion = colacion;
+        this.precio = precio;
     }
 }
 
 /* Funciones*/
-// Se capturan entradas mediante prompt() y se define el precio por noche de cada cabaña.
-function crearReserva () {
-const nombre = prompt ('Bienvenido, por favor ingrese su nombre');
-const cantidadAdultos = parseInt (Number (prompt ('Por favor ingrese la cantidad de adultos que desean hospedarse')));
-const cantidadNiños = parseInt (Number (prompt ('Por favor ingrese la cantidad de niños que desean hospedarse')));
-const cantidadNoches = parseInt (Number (prompt ('¿Cuántas noches desean alojarse?')));
-const laCascada = 2000;
-const losAromos = 4000;
-const losEspinillos = 6000;
-const formaDePago = prompt ('¿Desea pagar con tarjeta de crédito o transferencia bancaria?')
-const mail = prompt ('Por favor ingrese su e-mail');
-return new Reservas (nombre, cantidadAdultos, cantidadNiños, cantidadNoches, laCascada, losAromos, losEspinillos, formaDePago, mail);
-}
+let desayunoYmerienda = [];
+desayunoYmerienda.push(new Producto("Infusión a elección", 200))
+desayunoYmerienda.push(new Producto("Cereales", 100))
+desayunoYmerienda.push(new Producto("Porción de torta", 250))
+desayunoYmerienda.push(new Producto("Tostadas", 150))
+desayunoYmerienda.push(new Producto("Ensalada de frutas", 80))
+desayunoYmerienda.push(new Producto("Huevos revueltos", 300))
+
+let almuerzoYcena = [];
+almuerzoYcena.push(new Producto("Gaseosa", 100))
+almuerzoYcena.push(new Producto("Pastas", 500))
+almuerzoYcena.push(new Producto("Hamburguesa", 500))
+almuerzoYcena.push(new Producto("Ensalada", 350))
+almuerzoYcena.push(new Producto("Sopa del día", 300))
+almuerzoYcena.push(new Producto("Cerveza artesanal", 200))
+
+
 
 // Reserva1
 // Realizo el llamado a crearReserva para solicitar los datos del usuario.
