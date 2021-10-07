@@ -54,7 +54,7 @@ const iniciarReserva1 = () => {
         alert  (`Lo sentimos, no disponemos de cabañas para alojar a más de 12 personas`);
     }}
 
-    // Forma de pago y cálculo de monto final de estadía.
+// Forma de pago.
 const pagarReserva1 = () => {
 if ((reserva1.formaDePago === "credito") || (reserva1.formaDePago === "transferencia")) {
     alert ('Usted va a pagar con ' + reserva1.formaDePago);
@@ -82,8 +82,8 @@ switch (cuotas) {
 
 const despedirReserva1 = () => {
     alert (`¡Muchas gracias por elegirnos, nos comunicaremos al e-mail ${reserva1.mail} para darle el detalle de su reserva!`);}
-/* Lógica */ 
 
+/* Lógica */ 
 saludarReserva1()
 iniciarReserva1()
 pagarReserva1()
