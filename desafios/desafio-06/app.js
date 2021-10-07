@@ -58,3 +58,11 @@ registrar()
 desayunos = ["Argentino", "Americano", "Fit"];
 desayunos.push ("Buffet") 
 alert (`Hemos agregado un nuevo desayuno a la carta, ofrecemos ahora los siguientes menúes: ${desayunos}, si desea cambiar su elección por favor comuníquese a través de whatsapp al número +3556387951`)
+
+
+///////////////////////////////////////////////
+// COMPLEMENTARIO
+
+ciudades = ["córdoba", "santa fe", "jujuy", "buenos aires", "mendoza"]
+ciudades.sort()
+console.log(ciudades)
