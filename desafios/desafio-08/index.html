@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | DESAFÍO 07 | DESAFIO COMPLEMENTARIO DOM | DOM</title>
+</head>
+<body>
+
+    <div id="div1"></div>
+
+<!-- FORM PARA RESERVACIÓN DE CABAÑA-->
+<form action="">
+
+    <!-- INPUT NOMBRE -->
+    <div class="reservacion">
+        <div class="reserva__nombre">
+            <input type="text" required id="nombre">
+            <span class="placeholder">Bienvenido, por favor ingrese su nombre.</span>
+        </div>
+    </div>
+
+    <!-- INPUT CANTIDAD DE ADULTOS -->
+    <div class="reservacion">
+        <div class="reserva__adultos">
+            <input type="number" required id="adultos">
+            <span class="placeholder">Por favor ingrese la cantidad de adultos que desean hospedarse.</span>
+        </div>
+    </div>
+
+    <!-- INPUT CANTIDAD DE MENORES -->
+    <div class="reservacion">
+        <div class="reserva__menores">
+            <input type="number" required id="menores">
+            <span class="placeholder">Por favor ingrese la cantidad de menores que desean hospedarse.</span>
+        </div>
+    </div>
+
+    <!-- INPUT CANTIDAD DE NOCHES -->
+    <div class="reservacion">
+        <div class="reserva__noches">
+            <input type="number" required id="noches">
+            <span class="placeholder">¿Cuántas noches desean alojarse?</span>
+        </div>
+    </div>
+
+    <!-- INPUT FORMA DE PAGO     hacer checkbox-->
+    <div class="reservacion">
+        <div class="reserva__pago" id="pago"> 
+            <input type="radio" required id="credito">Tarjeta de crédito
+            <input type="radio" required id="transferencia">Transferencia bancaria
+            <span class="placeholder">¿Desea pagar con tarjeta de crédito o transferencia bancaria?</span>
+        </div>
+    </div>
+<!-- <select name="pago" id="formaDePago">
+    <option value="credito">Tarjeta de crédito</option>
+    <option value="transferencia">Transferencia bancaria</option>
+    
+</select>
+
+    <div class="reservacion">
+        <div class="reserva__pago">
+            <input type="text" required id="pago">
+            
+        </div>
+    </div> -->
+
+    <!-- INPUT MAIL -->
+    <div class="reservacion">
+        <div class="reserva__mail">
+            <input type="text" required id="mail">
+            <span class="placeholder">Por favor, ingrese su e-mail.</span>
+        </div>
+    </div>
+
+</form>
+
+<button id="btn">Reservar</button>
+
+<script src="./app.js"></script>
+</body>
+</html>
