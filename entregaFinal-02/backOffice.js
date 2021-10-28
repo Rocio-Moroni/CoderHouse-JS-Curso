@@ -17,8 +17,12 @@ const userLogin = new User (`rocio`, 2712);
 
 // FUNCIONES:
 
-// BUTTON ejecuta "verificarLogin()".
-document.getElementById(`btnLogIn`).addEventListener(`click`, () => {verificarLogin(), resetForm()});
+// CREACIÓN DE BUTTON "Log In" con jQuery.
+$(`#btnLog`).prepend(`<button id="btnLogIn"> Login </button`);
+
+// BUTTON ejecuta "verificarLogin()" con jQuery.
+// document.getElementById(`btnLogIn`).addEventListener(`click`, () => {verificarLogin(), resetForm()});
+$(`#btnLogIn`).on(`dblclick`, () => {verificarLogin(), resetForm()});
 
 
 // FUNCTION "resetForm()". (Se elimina la información ingresada en los inputs dejando el formulario en blanco luego de apretar el botón "Login").
@@ -82,7 +86,8 @@ const guardarValorBuscado = () => {
 
 
 // BUTTON ejecuta "guardarValorBuscado()".
-document.getElementById(`btnSearch`).addEventListener(`click`, () => {guardarValorBuscado(), imprimirDatosBuscador})
+// document.getElementById(`btnSearch`).addEventListener(`click`, () => {guardarValorBuscado(), imprimirDatosBuscador});
+$(`#btnSearch`).on(`click`, () => {guardarValorBuscado(), imprimirDatosBuscador});
 
 
 // FUNCTION "buscadorNombre()". (A través de un buscador se puede ingresar el nombre de un alojado en particular y se imprimán sus datos).
@@ -116,12 +121,13 @@ const imprimirDatosBuscador = () => {
         <td>${element.mail}</td>
     </tr>
     `
-    })
+    });
 }
 
 
 // BUTTON ejecuta "resetFormSearch()".
 document.getElementById(`btnSearch`).addEventListener(`click`, () => {resetFormSearch()});
+$(`#btnSearch`).on(`click`,  () => {resetFormSearch()});
 
 
 // FUNCTION "resetFormSearch()". (Se elimina la información ingresada en los inputs dejando el formulario en blanco luego de apretar el botón "Search").

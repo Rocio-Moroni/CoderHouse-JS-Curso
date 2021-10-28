@@ -48,7 +48,6 @@ const extraerDatos = () => {
         mail: document.getElementById("form__mail").value
         })
 
-
         return nuevaReserva;
 }
 
